@@ -1,0 +1,264 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: roboto, cursive;
+}
+
+img {
+	box-sizing: border-box;
+}
+
+.padre {
+	background: #fff;
+	padding: 0px;
+	display: flex;
+	flex-flow: column nowrap;
+}
+	.hijo {
+		background: #536AC6;
+		display: flex;
+		flex-flow: row nowrap;
+		margin: auto;
+	}
+		.header {
+			background: #D581C7;
+			display: flex;
+			height: auto;
+			padding: 2px 0 8px 0;
+			position: relative;
+			z-index: 1;
+
+
+		}
+			.header:hover {
+				box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .1);
+			}
+
+
+			.header h1 {
+				margin: auto;
+				font-size: 60px;
+				filter: opacity(.4);
+			}
+					
+				@keyframes titulo {
+					0% {
+						letter-spacing: none;
+					}
+
+					50% {
+						letter-spacing: 10px;
+					}
+					100% {
+						letter-spacing: none;
+					}
+
+				}
+
+
+
+				.header h1:hover {
+					animation-name: titulo;
+					animation-duration: 1s;
+					animation-fill-mode: backwards;
+					transition-timing-function: ease;
+					animation-iteration-count: infinite;
+				}
+
+
+
+
+
+
+
+		.main {
+			background: #9B81D5;
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+			height: auto;
+
+		}
+			.contenido {
+				
+				background-image: url(https://image.freepik.com/psd-gratis/vista-superior-fondo-matematicas-cuaderno-numeros_23-2148458901.jpg);
+				background-repeat: no-repeat;
+				background-attachment: contain;
+				background-position: center;
+				background-size: cover;
+				display: flex;
+				flex-flow: row nowrap;
+				
+				height: auto;
+				align-items: center;
+				padding: 20px 20px;
+
+
+			}
+					.article{
+						background: FFADAD;
+						display: flex;
+						flex-flow: column nowrap;
+						position: relative;
+						width: 100%;
+						margin: 0px 8px;
+						height: autopx;
+						padding: 10px;
+
+						
+
+					}
+
+						.form p {
+							
+							background: #fff;
+							height: 60px;
+							box-shadow: 5px 5px #0004;
+						}
+							.form p::before {
+								content: "respuesta: ";
+							}
+
+
+
+						.texto-principal {
+							display: flex;
+							align-items: center;
+
+						}
+							.texto-principal h2 {
+								font-size: 40px ;
+								margin: auto;
+								color: #454545;
+
+
+								
+							}
+
+						.label {
+							margin-top: 30px;
+							
+							height: auto;
+							padding: auto;
+							display: flex;
+							background: #4545;
+							align-items: center;
+							justify-content: space-between;
+							box-shadow: 5px 5px #0004;
+							
+
+							
+						}
+							
+
+							.label h2 {
+								display: flex;
+								
+								color: #fffe;
+								padding: 20px;
+								
+
+							}
+
+							.label2 h2 {
+								padding: 15px;
+							}
+
+
+
+						.formulario {
+							
+							display: flex;
+							flex-flow: column nowrap;
+							
+							width: 100%;
+							bottom: 50px;
+							
+												
+						}
+
+							.formulario2 {
+								
+							}
+
+							.input {
+								margin: 5px 0;
+								width: 100%;
+								height: 30px;
+								border-radius: 5%;
+								box-shadow: 5px 5px #0004;
+							}
+
+							.boton {
+								margin: 10px 0 10px 0;
+								height: 30px;
+								box-shadow: 5px 5px #0004;
+
+							}
+
+
+
+		.pie {
+			background: #454545;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+			.texto-final h3{
+				display: flex;
+				margin: auto;
+				color: #fffe;
+			}
+
+
+@media screen and (max-width: 850px ) {
+	
+	.contenido {
+		flex-direction: column;
+	}
+
+
+	.header {
+		justify-content: space-between;
+		align-items: center;
+		padding: auto;
+		height: auto;
+
+	}
+
+	.header h1 {
+		display: flex;
+		padding: 10px 40px;
+		margin: auto;
+		font-size: 30px;
+		
+
+	}
+
+					@keyframes titulo {
+					0% {
+						letter-spacing: none;
+					}
+
+					50% {
+						letter-spacing: 5px;
+					}
+					100% {
+						letter-spacing: none;
+					}
+
+				}
+
+
+
+				.header h1:active {
+					animation-name: titulo;
+					animation-duration: 1s;
+					animation-fill-mode: backwards;
+					transition-timing-function: ease;
+					animation-iteration-count: infinite;
+				}
+	
+
+}

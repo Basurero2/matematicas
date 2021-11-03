@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Juan</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<script type="text/javascript" src="registro.js"></script>
+	<div class="padre">
+			<header class="header">
+				<h1>Perimetro y Area</h1>
+
+			</header>
+
+			<main class="main">
+				<div class="contenido">
+					<article class="article">
+						<form class="form">
+							<div class="texto-principal">
+								<h2 class="titulo">Cuadrado</h2>
+							</div>
+							<label for="inputCuadrado" class="label">
+								<h2>Colo aqui su medida del lado de su cuadrado</h2>
+							</label>
+
+							<br>
+
+							<div class="formulario">
+								<input type="number" id="inputCuadrado" class="input">
+								<button type="button" onclick="calcularPerimetroCuadrado()" class="boton">
+									Perimetro
+								</button>
+								<button type="button" onclick="calcularAreaCuadrado()" placeholder="lado/examp: 45" class="boton">
+									Area
+								</button>
+							</div>
+
+							<p id="pResultado"></p>
+						</form>
+					</article>
+
+							<br>
+							<br>
+
+					<article class="article">		
+
+						<form class="form form2">
+							<div class="texto-principal">
+								<h2 class="titulo">Triangulo</h2>
+							</div>	
+							<label for="inputTriangulo" class="label label2">
+								<h2>Coloque aqui las medidas de su lados del Triangulo</h2>
+							</label>
+
+							<br>
+
+							<div class="formulario formulario2">
+								<input type="number" id="ladoATriangulo" placeholder="lado 1" class="input">
+								<input type="number" id="ladoBTriangulo" placeholder="lado 2" class="input">
+								<input type="number" id="baseTriangulo" placeholder="base" class="input">
+								<button type="button" onclick="calcularPerimetroTriangulo()" class="boton">
+									Perimetro
+								</button>
+								<button type="button" onclick="calcularAreaTriangulo()" class="boton">
+									Area
+								</button>
+
+							</div>		
+							<p id="pResultado2"></p>
+
+						</form>
+
+					</article>	
+
+							<br>
+							<br>
+
+					<article class="article">
+						<form class="form">
+							<div class="texto-principal">	
+								<h2 class="titulo">Circulo</h2>
+							</div>
+							<label for="inputCirculo" class="label">
+								<h2>Coloque aqui el radio de su circulo</h2>
+							</label>
+
+							<br>
+
+							<div class="formulario">
+								<input type="number" id="inputCirculo" placeholder="radio/examp: 45" class="input">
+								<button type="button" onclick="calcularPerimetroCirculo()" class="boton">
+									Perimetro
+								</button>
+								<button type="button" onclick="calcularAreaCirculo()" class="boton">
+									Area
+								</button>				
+							</div>	
+
+							<p id="pResultado3"></p>
+						</form>
+					</article>
+				</div>
+			</main>
+
+			<footer class="pie">
+				<div class="texto-final">
+					<h3>Copyright 2020</h3>		
+				</div>
+			</footer>
+		</div>
+	</div>
+	
+</body>
+</html>
